@@ -1,10 +1,21 @@
 <!doctype html>
 <html>
 <head>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.6/angular.min.js"></script>
 <meta charset="utf-8">
 <title>Untitled Document</title>
 </head>
 
-<body>
+<body ng-app="">
+	<div ng-init="X=[{name:'awais',class:'Developer',BetchCode:'1807G'},{name:'shfqat',class:'Developer',BetchCode:'1807G'},{name:'zeeshan',class:'Developer',BetchCode:'1807G'},{name:'qasim',class:'Developer',BetchCode:'1807G'},{name:'waqas',class:'Developer',BetchCode:'1807G'},{name:'hamza',class:'robotics',BetchCode:'1807G'},{name:'mohsin',class:'softweareng',BetchCode:'1807G'},{name:'ramzan',class:'shopkeeper',BetchCode:'1807G'}]">
+	</div>
+	<div style="background-color: yellow;width:100%;height:auto;display:flex;flex-wrap: wrap;">
+	<div ng-repeat="a in X">
+	    <div style="width: 150px;height: 150px;margin: 15px;background-color:{{a.name+' '+a.class+' '+a.BetchCode}};">
+		{{a.name+' '+a.class+' '+a.BetchCode}}
+		</div>
+	</div>
+	</div>
+	
 </body>
 </html>
